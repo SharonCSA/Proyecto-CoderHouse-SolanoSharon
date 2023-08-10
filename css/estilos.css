@@ -88,6 +88,9 @@ main{
 .productos:hover {
     border: 3px solid white;
 }
+.joyas{
+    object-fit: cover;
+}
 /*Fin del contenido catalogo*/
 /*Comienzo del contenido quienessomos*/
 .video{
@@ -156,28 +159,41 @@ main{
     background-color:rgba(161, 126, 61, 0.705);
     margin-top: 30px;
     margin-bottom: 30px;
-    height: 700px;
-    display: grid;
-    grid-template-columns: 1.4fr 0.6fr;
-    grid-template-rows: 1fr;
-    gap: 5px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "form direccion";
-    align-items: center;
+    padding: 10px;
   } 
   .formulario { 
     height: 600px;
     grid-area: form; 
 }
-  .datos_contactos { 
+.datos_contactos { 
     background-color: rgb(252, 227, 196);
     margin: 60px;
-    margin-left:-80px;
     padding: 20px;
-    height: 350px;
-    grid-area: direccion;
     text-align: center;
+    .container {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "h2"
+        "p"
+        "numero"
+        "iframe";
+}    
+.h2 { 
+    grid-area: h2; 
+}    
+.p { 
+    grid-area: p; 
+}    
+.numero { 
+    grid-area: numero; 
+}    
+.iframe { 
+    grid-area: iframe; 
+}    
 }
 .datos_contactos a{
     text-decoration: none;
@@ -259,14 +275,23 @@ main{
         font-size: 16px;
     }
     /*index*/
-    .sale{
+    .atractivos{
         font-size: 18px;
     }
-    .cotizar{
-        font-size: 18px;
+    /*ubicanos*/
+    .fondodemapa{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px;
+        grid-template-areas:
+          "direccion"
+          "mapa"
+          "contacto";
+      }
+      .direccion{
+        padding: 50px;
     }
-    /*Catalogo*/
-
     /*footer*/
     footer {
         height: auto;
