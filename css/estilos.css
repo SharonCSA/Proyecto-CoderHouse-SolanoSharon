@@ -41,11 +41,48 @@ main{
 .carrusel{
     margin: 30px;
 }
+
 .contenedor{
     background-color: rgba(161, 126, 61, 0.705);
     margin-bottom: 20px;
     padding: 10px;
 }
+.prendas { 
+    background-color: rgba(197, 181, 157, 0.849);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 20px;
+} 
+.product-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+.product-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(253, 222, 184, 0.575);
+  }
+  
+.product-content img {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 20%;
+  }
+.product-content img:hover{
+    border: 3px solid rgb(207, 161, 105);
+  } 
+.product-content p {
+    margin: 20px 0;
+    font-size: 18px;
+}  
 .intereses{
     justify-content: center;
 }
@@ -278,6 +315,9 @@ main{
     .atractivos{
         font-size: 18px;
     }
+    .product-section {
+        flex-direction: column;
+      }
     /*ubicanos*/
     .fondodemapa{
         display: grid;
