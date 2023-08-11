@@ -58,7 +58,6 @@ main{
     justify-content: space-between;
     padding: 50px;
   }
-  
 .product-content {
     flex: 1;
     display: flex;
@@ -318,7 +317,10 @@ main{
     }
     .product-section {
         flex-direction: column;
-      }
+    }
+    .product-content{
+        margin: 5px;
+    } 
     /*ubicanos*/
     .fondodemapa{
         display: grid;
