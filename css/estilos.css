@@ -51,7 +51,7 @@ main{
     background-color: rgba(197, 181, 157, 0.849);
     margin-bottom: 20px;
     margin-top: 20px;
-    padding: 20px;
+    padding: 10px;
 } 
 .product-section {
     display: flex;
@@ -66,6 +66,7 @@ main{
     align-items: center;
     text-align: center;
     padding: 10px;
+    border-radius: 2.5%;
     background-color: rgba(253, 222, 184, 0.575);
   }
   
