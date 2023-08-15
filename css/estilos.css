@@ -4,55 +4,27 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(206, 184, 153);
-    background-image: url(../img/fondo.jpg);
-    background-repeat: repeat;
-    background-size: 100% auto;
+    background: linear-gradient(to top,  rgb(233, 160, 111), white,  rgb(252, 182, 135));
 }
 .navegador{
-    background-color:rgb(224, 208, 180);
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     font-family: 'Nunito Sans', sans-serif;
 }
-.navegador img{
-    width: 165px;
-}
 .navegador a{
-    list-style: none;
-    text-decoration: none;
-    color: rgb(83, 49, 10);
+    color: rgb(59, 34, 5);
     font-size: 20px;
 }
 .navegador a:hover:not(:first-child){
-    background-color: wheat;
+    background-color: rgb(253, 179, 130);
     border-radius: 80px;
     color: black;
-}
-.navegador ol li{
-    list-style: none;
 }
 main{
     font-family: 'Roboto Slab', serif;
 }
 /*Comienzo del contenido index*/
 .carrusel{
-    margin: 30px;
+    margin: 20px;
 }
-
-.contenedor{
-    background-color: rgba(255, 194, 159, 0.705);
-    margin-bottom: 20px;
-    padding: 10px;
-}
-.prendas { 
-    background-color: rgba(197, 181, 157, 0.849);
-    margin-bottom: 20px;
-    margin-top: 20px;
-    padding: 10px;
-} 
 .product-section {
     display: flex;
     justify-content: space-between;
@@ -65,10 +37,8 @@ main{
     align-items: center;
     text-align: center;
     padding: 10px;
-    border-radius: 2.5%;
-    background-color: rgba(253, 222, 184, 0.575);
+    background-color: rgb(253, 222, 184);
   }
-  
 .product-content img {
     max-width: 180px;
     width: 100%;
@@ -83,11 +53,14 @@ main{
     margin: 20px 0;
     font-size: 18px;
 }  
+.contenedor{
+    margin: 10px;
+}
 .intereses{
     justify-content: center;
 }
 .atractivos{
-    background-color: rgb(243, 219, 182); 
+    background-color: rgb(253, 222, 184); 
     border-radius: 6px;
     width: 550px;
 }
@@ -243,9 +216,11 @@ main{
 /*Fin del contenido contactanos*/
 
 /*footer*/
+.divider {
+    border-top: 3px solid white;
+  }
 .piedepagina{
-    background-color: rgb(194, 175, 141);
-    padding: 15px;
+    padding: 10px;
     font-family: 'Roboto Slab', serif;
     display: grid; 
     grid-auto-columns: 1fr; 
@@ -300,7 +275,6 @@ main{
         height: auto;
         flex-direction: column;
         align-items: flex-center;
-        background-color: rgb(224, 208, 180);
     }
     .navegador:not(:first-child){
         align-items: flex-end;
@@ -315,11 +289,17 @@ main{
     .atractivos{
         font-size: 18px;
     }
+    .prendas{
+        padding: 5px;
+        margin-top: 0;
+    }
     .product-section {
         flex-direction: column;
+        padding: 10px;
     }
     .product-content{
         margin: 5px;
+        border-radius: 2.5%;
     } 
     /*ubicanos*/
     .fondodemapa{
