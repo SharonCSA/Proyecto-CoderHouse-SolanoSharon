@@ -1,0 +1,44 @@
+main{
+    .contactos {  
+        background-color:rgba(161, 126, 61, 0.705);
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+    .datos_contactos { 
+        background-color: rgb(252, 227, 196);
+        margin: 60px;
+        padding: 20px;
+        text-align: center; 
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "h3"
+            "p"
+            "numero"
+            "iframe";
+        a{
+            text-decoration: none;
+            color: brown;
+            &:hover{
+                color: $resaltador;
+            }
+        }
+        .h3{
+            grid-area: h3;
+        }
+        .p{
+            grid-area: p;
+        }          
+        .numero{
+            grid-area: numero;
+        }
+        .iframe{
+            grid-area: iframe;
+        }
+    } 
+}

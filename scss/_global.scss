@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to top,  rgb(233, 160, 111), white,  rgb(252, 182, 135));
+}
+header{
+    .navegador{
+        font-family: $font1;
+        a{
+            color: $color_textos;
+            font-size: 20px;
+            &:hover{
+                background-color: rgb(255, 212, 184);
+                border-radius: 80px;
+                color: black;
+            }
+        }
+    }
+}
+main{
+    font-family: $font2;
+    .divider{
+        border-top: 3px solid white;
+    }
+}
+
+.piedepagina{
+    padding: 10px;
+    font-family: $font3;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 0.3fr 0.3fr;
+    gap: 2px;
+    grid-template-areas: 
+        "nombre volver"
+        "correo redes"
+        "derechos derechos";
+    .nombre{
+        grid-area: nombre;
+    }
+    .correo{
+        grid-area: correo;
+        a{
+            text-decoration: none;
+            color: brown;
+            &:hover{
+                color: $resaltador;
+            }
+        }
+    }
+    .derechos{
+        grid-area: derechos;
+        text-align: center;
+    }
+    .redes{
+        grid-area: redes;
+        p{
+            color: $color_textos;
+        }
+    }
+    .volver{
+        grid-area: volver;
+        text-align: end;
+        color: $color_textos;
+    }
+    .icons{
+        color: $color_textos;
+        text-decoration: none;
+        margin: 0 10px;
+        &:hover{
+            color: $resaltador;
+        }
+    }
+
+}

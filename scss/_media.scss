@@ -1,0 +1,48 @@
+/* Estilos para pantallas más pequeñas (mobile) */
+@media (max-width: 768px) {
+    .navegador{
+        img{
+            width: 120px;
+        }
+    }
+    /*index*/
+    .product-section{
+        flex-direction: column;
+        padding: 10px;
+        .product-content{
+            margin: 5px;
+            border-radius: 2.5%;
+        }
+    }
+    .atractivos{
+        font-size: 18px;
+    }
+    /*ubicanos*/
+    .fondodemapa{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px;
+        grid-template-areas:
+          "direccion"
+          "mapa"
+          "contacto";
+        .direccion{
+            padding: 50px;
+        }
+    }
+    /*footer*/
+    .piedepagina{
+        height: auto;
+        .icons {
+            margin: 5px; /* Reduce el margen entre los íconos */
+            font-size: 18px;
+        }
+        .volver {
+            font-size: 14px;
+        }
+        .psocial {
+            font-size: 14px; 
+        }
+    }
+}

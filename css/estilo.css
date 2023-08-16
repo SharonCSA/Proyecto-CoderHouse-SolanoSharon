@@ -1,0 +1,224 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: linear-gradient(to top, #e9a06f, white, #fcb687); }
+
+header .navegador {
+  font-family: "Nanum Gothic", sans-serif; }
+  header .navegador a {
+    color: #5a3201;
+    font-size: 20px; }
+    header .navegador a:hover {
+      background-color: #ffd4b8;
+      border-radius: 80px;
+      color: black; }
+
+main {
+  font-family: "Roboto Slab", serif; }
+  main .divider {
+    border-top: 3px solid white; }
+
+.piedepagina {
+  padding: 10px;
+  font-family: "Nunito Sans", sans-serif;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.3fr 0.3fr 0.3fr;
+  gap: 2px;
+  grid-template-areas: "nombre volver" "correo redes" "derechos derechos"; }
+  .piedepagina .nombre {
+    grid-area: nombre; }
+  .piedepagina .correo {
+    grid-area: correo; }
+    .piedepagina .correo a {
+      text-decoration: none;
+      color: brown; }
+      .piedepagina .correo a:hover {
+        color: #ffbb00; }
+  .piedepagina .derechos {
+    grid-area: derechos;
+    text-align: center; }
+  .piedepagina .redes {
+    grid-area: redes; }
+    .piedepagina .redes p {
+      color: #5a3201; }
+  .piedepagina .volver {
+    grid-area: volver;
+    text-align: end;
+    color: #5a3201; }
+  .piedepagina .icons {
+    color: #5a3201;
+    text-decoration: none;
+    margin: 0 10px; }
+    .piedepagina .icons:hover {
+      color: #ffbb00; }
+
+main {
+  font-family: "Roboto Slab", serif; }
+  main .carrusel {
+    margin: 20px; }
+  main .product-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px; }
+    main .product-section .product-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+      background-color: #fddeb8; }
+      main .product-section .product-content img {
+        max-width: 180px;
+        width: 100%;
+        height: auto;
+        border: 2px solid white;
+        border-radius: 20%; }
+        main .product-section .product-content img:hover {
+          border: 3px solid #cfa169; }
+      main .product-section .product-content p {
+        margin: 20px 0;
+        font-size: 18px; }
+  main .contenedor {
+    margin: 10px; }
+    main .contenedor .intereses {
+      justify-content: center; }
+      main .contenedor .intereses .atractivos {
+        background-color: #fddeb8;
+        border-radius: 6px;
+        width: 550px; }
+        main .contenedor .intereses .atractivos img {
+          max-width: 300px;
+          width: 100%;
+          border-radius: 10%; }
+        main .contenedor .intereses .atractivos a {
+          text-decoration: none;
+          color: #5a3201; }
+          main .contenedor .intereses .atractivos a p:hover {
+            background-color: white;
+            border-radius: 40%; }
+
+main .fondo_texto {
+  background-color: #91794d;
+  color: white; }
+
+main .fondo_album {
+  background-color: #e4d3b3; }
+
+main .productos {
+  background-color: #cab185;
+  border: 3px solid #a8936f; }
+  main .productos:hover {
+    border: 3px solid white; }
+  main .productos .joyas {
+    object-fit: cover; }
+
+main .base {
+  background-color: rgba(161, 126, 61, 0.705);
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  main .base .fondodemapa {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    grid-template-areas: "direccion mapa" "contacto contacto"; }
+    main .base .fondodemapa .direccion {
+      color: #68350c;
+      padding: 10px;
+      height: 200px;
+      background-color: bisque;
+      grid-area: direccion;
+      text-align: center; }
+    main .base .fondodemapa .mapa {
+      padding: 10px;
+      height: 200px;
+      background-color: bisque;
+      grid-area: mapa;
+      text-align: center; }
+    main .base .fondodemapa .contacto {
+      color: #68350c;
+      padding: 10px;
+      height: 150px;
+      background-color: bisque;
+      grid-area: contacto;
+      text-align: center; }
+      main .base .fondodemapa .contacto ul {
+        list-style: none; }
+        main .base .fondodemapa .contacto ul li a {
+          text-decoration: none;
+          color: #5a3201; }
+          main .base .fondodemapa .contacto ul li a:hover {
+            color: #ffbb00; }
+
+main .contactos {
+  background-color: rgba(161, 126, 61, 0.705);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px; }
+
+main .datos_contactos {
+  background-color: #fce3c4;
+  margin: 60px;
+  padding: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "h3" "p" "numero" "iframe"; }
+  main .datos_contactos a {
+    text-decoration: none;
+    color: brown; }
+    main .datos_contactos a:hover {
+      color: #ffbb00; }
+  main .datos_contactos .h3 {
+    grid-area: h3; }
+  main .datos_contactos .p {
+    grid-area: p; }
+  main .datos_contactos .numero {
+    grid-area: numero; }
+  main .datos_contactos .iframe {
+    grid-area: iframe; }
+
+/* Estilos para pantallas más pequeñas (mobile) */
+@media (max-width: 768px) {
+  .navegador img {
+    width: 120px; }
+  /*index*/
+  .product-section {
+    flex-direction: column;
+    padding: 10px; }
+    .product-section .product-content {
+      margin: 5px;
+      border-radius: 2.5%; }
+  .atractivos {
+    font-size: 18px; }
+  /*ubicanos*/
+  .fondodemapa {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    grid-template-areas: "direccion" "mapa" "contacto"; }
+    .fondodemapa .direccion {
+      padding: 50px; }
+  /*footer*/
+  .piedepagina {
+    height: auto; }
+    .piedepagina .icons {
+      margin: 5px;
+      /* Reduce el margen entre los íconos */
+      font-size: 18px; }
+    .piedepagina .volver {
+      font-size: 14px; }
+    .piedepagina .psocial {
+      font-size: 14px; } }

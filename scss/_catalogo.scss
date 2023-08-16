@@ -1,0 +1,19 @@
+main{
+    .fondo_texto{
+        background-color: rgb(145, 121, 77);
+        color: white;
+    }
+    .fondo_album{
+        background-color: rgb(228, 211, 179);
+    }
+    .productos{
+        background-color: rgb(202, 177, 133);
+        border: 3px solid rgb(168, 147, 111);
+        &:hover{
+            border: 3px solid white;
+        }
+        .joyas{
+            object-fit: cover;
+        }
+    }
+}
