@@ -1,0 +1,11 @@
+main{
+    font-family: $font2;
+    .tarjetas{
+        border: 2px solid $borde_card;
+        box-shadow: $sombra;
+    }
+    .tarjetas_color{
+        background-color: $borde_card;
+        box-shadow: $sombra;
+    }
+}

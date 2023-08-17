@@ -73,6 +73,7 @@ main {
       align-items: center;
       text-align: center;
       padding: 10px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
       background-color: #fddeb8; }
       main .product-section .product-content img {
         max-width: 180px;
@@ -92,7 +93,8 @@ main {
       main .contenedor .intereses .atractivos {
         background-color: #fddeb8;
         border-radius: 6px;
-        width: 550px; }
+        width: 550px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
         main .contenedor .intereses .atractivos img {
           max-width: 300px;
           width: 100%;
@@ -118,6 +120,15 @@ main .productos {
     border: 3px solid white; }
   main .productos .joyas {
     object-fit: cover; }
+
+main {
+  font-family: "Roboto Slab", serif; }
+  main .tarjetas {
+    border: 2px solid #ff8f45;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
+  main .tarjetas_color {
+    background-color: #ff8f45;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
 
 main .base {
   margin-top: 30px;
@@ -162,7 +173,7 @@ main .base {
 main .contactos {
   margin-bottom: 30px; }
   main .contactos .borde_form {
-    border: 3px solid  #ff8f45;
+    border: 3px solid #ff8f45;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
     main .contactos .borde_form .titulo_form {
       background-color: #ff8f45; }

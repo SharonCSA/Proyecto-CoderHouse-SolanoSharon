@@ -2,10 +2,10 @@ main{
     .contactos {  
         margin-bottom: 30px;
         .borde_form{
-            border: 3px solid  #ff8f45;
+            border: 3px solid  $borde_card;
             box-shadow: $sombra;
             .titulo_form{
-                background-color:  #ff8f45;
+                background-color: $borde_card;
             }
         }   
     }

@@ -15,6 +15,7 @@ main{
             align-items: center;
             text-align: center;
             padding: 10px;
+            box-shadow: $sombra;
             background-color: $color_cajas;
             img{
                 max-width: 180px;
@@ -40,6 +41,7 @@ main{
                 background-color: $color_cajas;
                 border-radius: 6px;
                 width: 550px;
+                box-shadow: $sombra;
                 img{
                     max-width: 300px;
                     width: 100%;
