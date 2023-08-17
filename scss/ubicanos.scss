@@ -1,6 +1,5 @@
 main{
     .base{
-        background-color: rgba(161, 126, 61, 0.705);
         margin-top: 30px;
         margin-bottom: 30px;
         .fondodemapa{
@@ -15,24 +14,27 @@ main{
                 color: rgb(104, 53, 12);
                 padding: 10px;
                 height: 200px;
-                background-color: bisque;
+                background-color: $color_cajas;
                 grid-area: direccion;
                 text-align: center;
+                box-shadow: $sombra;
             }
             .mapa {
                 padding: 10px;
                 height: 200px;
-                background-color: bisque;
+                background-color: $color_cajas;
                 grid-area: mapa;
                 text-align: center;
+                box-shadow: $sombra;
             }
             .contacto { 
                 color: rgb(104, 53, 12);
                 padding: 10px;
                 height: 150px;
-                background-color: bisque;
+                background-color: $color_cajas;
                 grid-area: contacto; 
                 text-align: center;
+                box-shadow: $sombra;
                 ul{
                     list-style: none;
                     li a{

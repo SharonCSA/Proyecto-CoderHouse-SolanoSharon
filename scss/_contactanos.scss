@@ -1,15 +1,20 @@
 main{
     .contactos {  
-        background-color:rgba(161, 126, 61, 0.705);
-        margin-top: 30px;
         margin-bottom: 30px;
-        padding: 10px;
+        .borde_form{
+            border: 3px solid  #ff8f45;
+            box-shadow: $sombra;
+            .titulo_form{
+                background-color:  #ff8f45;
+            }
+        }   
     }
     .datos_contactos { 
-        background-color: rgb(252, 227, 196);
+        background-color: $color_cajas;
         margin: 60px;
         padding: 20px;
         text-align: center; 
+        box-shadow: $sombra;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr;

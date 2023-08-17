@@ -120,7 +120,6 @@ main .productos {
     object-fit: cover; }
 
 main .base {
-  background-color: rgba(161, 126, 61, 0.705);
   margin-top: 30px;
   margin-bottom: 30px; }
   main .base .fondodemapa {
@@ -133,22 +132,25 @@ main .base {
       color: #68350c;
       padding: 10px;
       height: 200px;
-      background-color: bisque;
+      background-color: #fddeb8;
       grid-area: direccion;
-      text-align: center; }
+      text-align: center;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
     main .base .fondodemapa .mapa {
       padding: 10px;
       height: 200px;
-      background-color: bisque;
+      background-color: #fddeb8;
       grid-area: mapa;
-      text-align: center; }
+      text-align: center;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
     main .base .fondodemapa .contacto {
       color: #68350c;
       padding: 10px;
       height: 150px;
-      background-color: bisque;
+      background-color: #fddeb8;
       grid-area: contacto;
-      text-align: center; }
+      text-align: center;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
       main .base .fondodemapa .contacto ul {
         list-style: none; }
         main .base .fondodemapa .contacto ul li a {
@@ -158,16 +160,19 @@ main .base {
             color: #ffbb00; }
 
 main .contactos {
-  background-color: rgba(161, 126, 61, 0.705);
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 10px; }
+  margin-bottom: 30px; }
+  main .contactos .borde_form {
+    border: 3px solid  #ff8f45;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
+    main .contactos .borde_form .titulo_form {
+      background-color: #ff8f45; }
 
 main .datos_contactos {
-  background-color: #fce3c4;
+  background-color: #fddeb8;
   margin: 60px;
   padding: 20px;
   text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr;
