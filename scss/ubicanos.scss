@@ -10,9 +10,9 @@ main{
           "direccion mapa"
           "contacto contacto";
         .direccion { 
-            color: rgb(104, 53, 12);
-            padding: 10px;
-            height: 200px;
+            color: $color_textos;
+            padding: 30px;
+            height: auto;
             background-color: $color_cajas;
             grid-area: direccion;
             text-align: center;
@@ -20,16 +20,16 @@ main{
         }
         .mapa {
             padding: 10px;
-            height: 200px;
+            height: auto;
             background-color: $color_cajas;
             grid-area: mapa;
             text-align: center;
             box-shadow: $sombra;
         }
         .contacto { 
-            color: rgb(104, 53, 12);
-            padding: 10px;
-            height: 150px;
+            color: $color_textos;
+            padding: 20px;
+            height: auto;
             background-color: $color_cajas;
             grid-area: contacto; 
             text-align: center;

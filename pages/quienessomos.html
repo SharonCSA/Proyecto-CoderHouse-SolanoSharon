@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nunito+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>HATHOR | ¿Quienes somos?</title>
 </head>
 <body>
@@ -50,7 +51,7 @@
             <hr class="my-5">
             <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 1068px;">
               <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
-                <div class="tarjetas card">
+                <div class="tarjetas card" data-aos="fade-right">
                   <img src="../img/qsomos/img1.jpg" alt="foco">
                   <div class="card-body">
                     <p class="card-text"><b>HATHOR-</b> es una empresa familiar emergente. Brindamos a nuestros clientes la mejor atención y asesoramiento, para poder obtener la mejor cotización del mercado , así mismo contamos con un catalogo de alhajas, brillantes, cadenas, pulseras, alianzas y otras piezas valiosas seleccionadas y hechas especialmente.
@@ -59,7 +60,7 @@
                 </div>
               </div>
               <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 50%; top: 0px;">
-                <div class="tarjetas card p-3">
+                <div class="tarjetas card p-3" data-aos="fade-left">
                   <figure class="p-3 mb-0">
                     <blockquote class="blockquote">
                       <p>Para nosotros la prioridad es mantener a nuestros clientes felices y seguros.</p>
@@ -71,7 +72,7 @@
                 </div>
               </div>
               <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 50%; top: 201px;">
-                <div class="tarjetas card">
+                <div class="tarjetas card" data-aos="fade-right">
                   <img src="../img/qsomos/img3.jpg" alt="anillos">
                   <div class="card-body">
                     <p class="card-text">Nos distinguimos por la atención personalizada en un entorno seguro, un servicio impecable con tasadores profesionales y el mejor destino para las piezas que siempre atesoró.</p>
@@ -79,7 +80,7 @@
                 </div>
               </div>
               <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 386px;">
-                <div class="tarjetas_color card text-center p-3">
+                <div class="tarjetas_color card text-center p-3" data-aos="fade-left">
                   <figure class="mb-0">
                     <blockquote class="blockquote text-white">
                       <p>Los diamantes son el mejor amigo de una mujer.</p>
@@ -92,7 +93,7 @@
               </div>
               <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 525px;">
                 <div class="card text-center">
-                  <div class="tarjetas card-body">
+                  <div class="tarjetas card-body" data-aos="fade-right">
                     <h5 class="card-title">¡Contáctanos!</h5>
                     <p class="card-text">Antes de cualquier decisión de venta, no dude en obtener, sin compromiso un cotización con nosotros...</p>
                     <a href="./contactanos.html"><p class="card-text"><small class="text-body-secondary">Contactar con HATHOR</small></p></a>
@@ -100,12 +101,12 @@
                 </div>
               </div>
               <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 50%; top: 579px;">
-                <div class="tarjetas card">
+                <div class="tarjetas card" data-aos="fade-left">
                   <img src="../img/qsomos/joyeria.jpg" alt="joyas">
                 </div>
               </div>
               <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 703px;">
-                <div class="tarjetas_color card p-3 text-end">
+                <div class="tarjetas_color card p-3 text-end " data-aos="fade-right">
                   <figure class="mb-0">
                     <blockquote class="blockquote text-white">
                       <p>Una joya tiene el poder de ser esa cosa pequeña que puede hacerte sentir única.</p>
@@ -118,7 +119,7 @@
               </div>
               <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 842px;">
                 <div class="card">
-                  <div class="tarjetas card-body">
+                  <div class="tarjetas card-body" data-aos="fade-left">
                     <h5 class="card-title">¡Nunca paramos!</h5>
                     <p class="card-text">Seguimos trabajando para darte lo mejor, no dejes de seguirnos.</p>
                     <p class="card-text"><small class="text-body-secondary">HATHOR | Joyería y accesorios</small></p>
@@ -151,6 +152,10 @@
             <a class="volver" href="#up">Volver arriba</a>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 </body>

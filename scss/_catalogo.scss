@@ -9,8 +9,10 @@ main{
         background:  linear-gradient(to top,  rgb(255, 206, 173), white);
         border: 3px solid rgb(145, 127, 96);
         box-shadow: $sombra;
+        transition: transform 0.5s ease;
         &:hover{
             border: 3px solid rgb(255, 112, 68);
+            transform: scale(1.1, 1.1);
         }
         .joyas{
             object-fit: cover;
@@ -20,8 +22,10 @@ main{
         background:  linear-gradient(to top,  rgb(255, 159, 95), white);
         border: 3px solid rgb(255, 60, 0);
         box-shadow: $sombra;
+        transition: transform 0.5s ease;
         &:hover{
             border: 3px solid rgb(255, 251, 250);
+            transform: scale(1.1, 1.1);
         }
         .joyas{
             object-fit: cover;
