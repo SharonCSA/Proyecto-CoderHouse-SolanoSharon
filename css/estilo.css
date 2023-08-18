@@ -9,6 +9,9 @@ body {
 
 header .navegador {
   font-family: "Nanum Gothic", sans-serif; }
+  header .navegador .boton_inicio {
+    background-color: #ff8737;
+    color: white; }
   header .navegador a {
     color: #5a3201;
     font-size: 20px; }
@@ -103,8 +106,7 @@ main {
           text-decoration: none;
           color: #5a3201; }
           main .contenedor .intereses .atractivos a p:hover {
-            background-color: white;
-            border-radius: 40%; }
+            color: #ffbb00; }
 
 main .header_cat {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
@@ -126,7 +128,7 @@ main .sale {
   background: linear-gradient(to top, #ff9f5f, white);
   border: 3px solid #ff3c00;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.5s ease; }
+  transition: transform 0.2s ease-in; }
   main .sale:hover {
     border: 3px solid #fffbfa;
     transform: scale(1.1, 1.1); }

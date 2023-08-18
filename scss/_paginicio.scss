@@ -52,8 +52,7 @@ main{
                     color: $color_textos;
                     p{
                         &:hover{
-                            background-color: white;
-                            border-radius: 40%;
+                            color: $resaltador;
                         }
                     }
                 }

@@ -9,6 +9,10 @@ body{
 header{
     .navegador{
         font-family: $font1;
+        .boton_inicio{
+            background-color: rgb(255, 135, 55);
+            color: white;
+        }
         a{
             color: $color_textos;
             font-size: 20px;
