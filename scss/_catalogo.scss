@@ -1,16 +1,27 @@
 main{
-    .fondo_texto{
-        background-color: rgb(145, 121, 77);
-        color: white;
-    }
-    .fondo_album{
-        background-color: rgb(228, 211, 179);
+    .header_cat{
+        box-shadow: $sombra;
+        .textos{
+            color: $color_textos;
+        }
     }
     .productos{
-        background-color: rgb(202, 177, 133);
-        border: 3px solid rgb(168, 147, 111);
+        background:  linear-gradient(to top,  rgb(255, 206, 173), white);
+        border: 3px solid rgb(145, 127, 96);
+        box-shadow: $sombra;
         &:hover{
-            border: 3px solid white;
+            border: 3px solid rgb(255, 112, 68);
+        }
+        .joyas{
+            object-fit: cover;
+        }
+    }
+    .sale{
+        background:  linear-gradient(to top,  rgb(255, 159, 95), white);
+        border: 3px solid rgb(255, 60, 0);
+        box-shadow: $sombra;
+        &:hover{
+            border: 3px solid rgb(255, 251, 250);
         }
         .joyas{
             object-fit: cover;
