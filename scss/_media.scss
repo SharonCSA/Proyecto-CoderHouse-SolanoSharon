@@ -17,6 +17,10 @@
     .atractivos{
         font-size: 18px;
     }
+    /*catalogo*/
+    .header_cat{
+        background-color: $color_cajas;
+    }
     /*ubicanos*/
     .fondodemapa{
         display: grid;
@@ -24,12 +28,9 @@
         grid-template-rows: 1fr 1fr 1fr;
         gap: 20px;
         grid-template-areas:
-          "direccion"
-          "mapa"
-          "contacto";
-        .direccion{
-            padding: 50px;
-        }
+            "direccion"
+            "mapa"
+            "contacto";
     }
     /*footer*/
     .piedepagina{

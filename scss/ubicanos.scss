@@ -1,48 +1,46 @@
 main{
-    .base{
-        margin-top: 30px;
+    .fondodemapa{
+        margin-top: 40px;
         margin-bottom: 30px;
-        .fondodemapa{
-            display: grid;
-            grid-template-columns: 0.7fr 1.3fr;
-            grid-template-rows: 1fr 1fr;
-            gap: 20px;
-            grid-template-areas:
-              "direccion mapa"
-              "contacto contacto";
-            .direccion { 
-                color: rgb(104, 53, 12);
-                padding: 10px;
-                height: 200px;
-                background-color: $color_cajas;
-                grid-area: direccion;
-                text-align: center;
-                box-shadow: $sombra;
-            }
-            .mapa {
-                padding: 10px;
-                height: 200px;
-                background-color: $color_cajas;
-                grid-area: mapa;
-                text-align: center;
-                box-shadow: $sombra;
-            }
-            .contacto { 
-                color: rgb(104, 53, 12);
-                padding: 10px;
-                height: 150px;
-                background-color: $color_cajas;
-                grid-area: contacto; 
-                text-align: center;
-                box-shadow: $sombra;
-                ul{
-                    list-style: none;
-                    li a{
-                        text-decoration: none;
-                        color: $color_textos;
-                        &:hover{
-                            color: $resaltador;
-                        }
+        display: grid;
+        grid-template-columns: 0.7fr 1.3fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        grid-template-areas:
+          "direccion mapa"
+          "contacto contacto";
+        .direccion { 
+            color: rgb(104, 53, 12);
+            padding: 10px;
+            height: 200px;
+            background-color: $color_cajas;
+            grid-area: direccion;
+            text-align: center;
+            box-shadow: $sombra;
+        }
+        .mapa {
+            padding: 10px;
+            height: 200px;
+            background-color: $color_cajas;
+            grid-area: mapa;
+            text-align: center;
+            box-shadow: $sombra;
+        }
+        .contacto { 
+            color: rgb(104, 53, 12);
+            padding: 10px;
+            height: 150px;
+            background-color: $color_cajas;
+            grid-area: contacto; 
+            text-align: center;
+            box-shadow: $sombra;
+            ul{
+                list-style: none;
+                li a{
+                    text-decoration: none;
+                    color: $color_textos;
+                    &:hover{
+                        color: $resaltador;
                     }
                 }
             }
