@@ -38,10 +38,11 @@ main {
   font-family: "Nunito Sans", sans-serif;
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 400px 400px;
   grid-template-rows: 0.3fr 0.3fr 0.3fr;
   gap: 2px;
-  grid-template-areas: "nombre volver" "correo redes" "derechos derechos"; }
+  grid-template-areas: "nombre volver" "correo redes" "derechos derechos";
+  place-content: center; }
   .piedepagina .nombre {
     grid-area: nombre; }
   .piedepagina .correo {
@@ -75,7 +76,9 @@ main {
     margin: 20px; }
   main .product-section {
     display: flex;
-    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0;
+    gap: 1rem;
     padding: 50px; }
     main .product-section .product-content {
       flex: 1;
@@ -154,9 +157,17 @@ main {
     background-color: #ff8f45;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
 
+main .contactos {
+  margin-bottom: 30px; }
+  main .contactos .borde_form {
+    border: 3px solid #ff8f45;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
+    main .contactos .borde_form .titulo_form {
+      background-color: #ff8f45; }
+
 main .fondodemapa {
-  margin-top: 40px;
-  margin-bottom: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 0.7fr 1.3fr;
   grid-template-rows: 1fr 1fr;
@@ -193,41 +204,6 @@ main .fondodemapa {
         main .fondodemapa .contacto ul li a:hover {
           color: #ffbb00; }
 
-main .contactos {
-  margin-bottom: 30px; }
-  main .contactos .borde_form {
-    border: 3px solid #ff8f45;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
-    main .contactos .borde_form .titulo_form {
-      background-color: #ff8f45; }
-
-main .datos_contactos {
-  background-color: #fddeb8;
-  margin: 60px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr;
-  grid-auto-columns: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "h3" "p" "numero" "iframe"; }
-  main .datos_contactos a {
-    text-decoration: none;
-    color: brown; }
-    main .datos_contactos a:hover {
-      color: #ffbb00; }
-  main .datos_contactos .h3 {
-    grid-area: h3; }
-  main .datos_contactos .p {
-    grid-area: p; }
-  main .datos_contactos .numero {
-    grid-area: numero; }
-  main .datos_contactos .iframe {
-    grid-area: iframe; }
-
 /* Estilos para pantallas más pequeñas (mobile) */
 @media (max-width: 768px) {
   .navegador {
@@ -245,8 +221,6 @@ main .datos_contactos {
   .atractivos {
     font-size: 18px; }
   /*catalogo*/
-  .header_cat {
-    background-color: #fddeb8; }
   /*ubicanos*/
   #fondodemapa {
     display: grid;
@@ -256,6 +230,7 @@ main .datos_contactos {
     grid-template-areas: "direccion" "mapa" "contacto"; }
   /*footer*/
   .piedepagina {
+    grid-template-columns: 1fr 1fr;
     height: auto; }
     .piedepagina .icons {
       margin: 5px;

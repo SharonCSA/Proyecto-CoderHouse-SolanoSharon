@@ -48,13 +48,14 @@ main{
     font-family: $font3;
     display: grid;
     grid-auto-columns: 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 400px 400px;
     grid-template-rows: 0.3fr 0.3fr 0.3fr;
     gap: 2px;
     grid-template-areas: 
         "nombre volver"
         "correo redes"
         "derechos derechos";
+        place-content: center;
     .nombre{
         grid-area: nombre;
     }

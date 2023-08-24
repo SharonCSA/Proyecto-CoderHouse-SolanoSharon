@@ -6,7 +6,9 @@ main{
 
     .product-section{
         display: flex;
-        justify-content: space-between;
+        max-width: 1400px;
+        margin: 0;
+        gap: 1rem;
         padding: 50px;
         .product-content{
             flex: 1;

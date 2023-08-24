@@ -20,9 +20,7 @@
         font-size: 18px;
     }
     /*catalogo*/
-    .header_cat{
-        background-color: $color_cajas;
-    }
+    
     /*ubicanos*/
     #fondodemapa{
         display: grid;
@@ -36,6 +34,7 @@
     }
     /*footer*/
     .piedepagina{
+        grid-template-columns: 1fr 1fr;
         height: auto;
         .icons {
             margin: 5px; /* Reduce el margen entre los íconos */
