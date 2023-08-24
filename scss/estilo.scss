@@ -13,3 +13,24 @@
 @import "contactanos";
 
 @import "media";
+
+@mixin boton-estilo($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: solid 2px $outline;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: darken(rgb(248, 148, 81), 10%);
+    }
+  }
+  
+.boton {
+    @include boton-estilo(rgb(250, 192, 154), rgb(104, 53, 12));
+  }
+  
+
+  
+  
