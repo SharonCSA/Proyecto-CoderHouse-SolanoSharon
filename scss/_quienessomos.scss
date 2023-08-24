@@ -1,5 +1,9 @@
 main{
     font-family: $font2;
+    .textos{
+        color: $color_textos;
+        padding: 20px;
+    }
     .tarjetas{
         border: 2px solid $borde_card;
         box-shadow: $sombra;
@@ -7,5 +11,10 @@ main{
     .tarjetas_color{
         background-color: $borde_card;
         box-shadow: $sombra;
+        padding: 20px;
+        .frases{
+            color: white;
+            text-align: end;
+        }
     }
 }
