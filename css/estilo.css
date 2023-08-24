@@ -162,6 +162,28 @@ main {
     background-color: #ff8f45;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
 
+main .header_des {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
+  main .header_des .textos {
+    color: #5a3201; }
+  main .header_des .link_descuentos {
+    color: #ff5100; }
+    main .header_des .link_descuentos:hover {
+      color: #ffbb00; }
+
+main .sale {
+  background: linear-gradient(to top, #ff9f5f, white);
+  border: 3px solid #ff3c00;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in; }
+  main .sale:hover {
+    border: 3px solid #fffbfa;
+    transform: scale(1.1, 1.1); }
+  main .sale .joyas {
+    object-fit: cover;
+    height: 350px;
+    width: 100%; }
+
 main .contactos {
   margin-bottom: 30px; }
   main .contactos .borde_form {
