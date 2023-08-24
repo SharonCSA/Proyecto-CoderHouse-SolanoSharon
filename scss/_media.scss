@@ -1,8 +1,10 @@
 /* Estilos para pantallas más pequeñas (mobile) */
 @media (max-width: 768px) {
     .navegador{
-        img{
-            width: 120px;
+        background-color:  rgb(255, 180, 130);
+        .logo{
+            max-width: 130px;
+            width: 100%;
         }
     }
     /*index*/

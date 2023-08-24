@@ -9,18 +9,30 @@ body{
 header{
     .navegador{
         font-family: $font1;
+        .logo{
+            width: 165px;
+            margin-left: 20px;
+        }
         .boton_inicio{
-            background-color: rgb(255, 135, 55);
+            background-color: rgb(255, 139, 86);
+            border-radius: 10%;
+            text-decoration: none;
             color: white;
         }
-        a{
+        a {
             color: $color_textos;
             font-size: 20px;
-            &:hover{
+            &:not(.logo) {
+              &:hover {
                 background-color: rgb(255, 212, 184);
-                border-radius: 80px;
+                border-radius: 10%;
                 color: black;
+              }
             }
+          }
+        .boton_carrito{
+            border-color:  rgb(255, 81, 0);
+            color:  rgb(255, 81, 0);
         }
     }
 }

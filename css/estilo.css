@@ -9,16 +9,24 @@ body {
 
 header .navegador {
   font-family: "Nanum Gothic", sans-serif; }
+  header .navegador .logo {
+    width: 165px;
+    margin-left: 20px; }
   header .navegador .boton_inicio {
-    background-color: #ff8737;
+    background-color: #ff8b56;
+    border-radius: 10%;
+    text-decoration: none;
     color: white; }
   header .navegador a {
     color: #5a3201;
     font-size: 20px; }
-    header .navegador a:hover {
+    header .navegador a:not(.logo):hover {
       background-color: #ffd4b8;
-      border-radius: 80px;
+      border-radius: 10%;
       color: black; }
+  header .navegador .boton_carrito {
+    border-color: #ff5100;
+    color: #ff5100; }
 
 main {
   font-family: "Roboto Slab", serif; }
@@ -122,7 +130,9 @@ main .productos {
     border: 3px solid #ff7044;
     transform: scale(1.1, 1.1); }
   main .productos .joyas {
-    object-fit: cover; }
+    object-fit: cover;
+    height: 350px;
+    width: 100%; }
 
 main .sale {
   background: linear-gradient(to top, #ff9f5f, white);
@@ -220,8 +230,11 @@ main .datos_contactos {
 
 /* Estilos para pantallas más pequeñas (mobile) */
 @media (max-width: 768px) {
-  .navegador img {
-    width: 120px; }
+  .navegador {
+    background-color: #ffb482; }
+    .navegador .logo {
+      max-width: 130px;
+      width: 100%; }
   /*index*/
   .product-section {
     flex-direction: column;
