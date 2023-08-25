@@ -1,20 +1,30 @@
 main{
     font-family: $font2;
-    .textos{
+    overflow-x: hidden;
+    .fondo{
+        background-image: url(../img/qsomos/fondo3.jpg);
+        object-fit: cover;
+        margin: 20px;
         color: $color_textos;
-        padding: 20px;
-    }
-    .tarjetas{
-        border: 2px solid $borde_card;
         box-shadow: $sombra;
-    }
-    .tarjetas_color{
-        background-color: $borde_card;
-        box-shadow: $sombra;
-        padding: 20px;
-        .frases{
-            color: white;
-            text-align: end;
+        h1{
+            color: $color_cards;
+        }
+        a{
+            color: $color_textos;
         }
     }
+    .clientes{
+        background-color: $color_cajas;
+        border-radius: 10%;
+        box-shadow: $sombra;
+        .quote{
+            color: $borde_card;
+        }
+        .foco{
+            width: 100%;
+            max-width: 300px;
+            object-fit: contain;
+        }
+    }      
 }

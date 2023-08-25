@@ -27,6 +27,8 @@ main{
             grid-area: direccion;
             text-align: center;
             box-shadow: $sombra;
+            border:  2px solid $borde_card;
+            border-radius: 5px;
         }
         .mapa {
             padding: 10px;
@@ -35,6 +37,8 @@ main{
             grid-area: mapa;
             text-align: center;
             box-shadow: $sombra;
+            border:  2px solid $borde_card;
+            border-radius: 5px;
         }
         .contacto { 
             color: $color_textos;
@@ -44,6 +48,8 @@ main{
             grid-area: contacto; 
             text-align: center;
             box-shadow: $sombra;
+            border:  2px solid $borde_card;
+            border-radius: 5px;
             ul{
                 list-style: none;
                 li a{

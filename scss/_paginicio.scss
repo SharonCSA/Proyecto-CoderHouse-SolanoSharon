@@ -2,6 +2,9 @@ main{
     font-family: $font2;
     .carrusel{
         margin: 20px;
+        .flechas{
+            background-color: $borde_card;
+        }
     }
 
     .product-section{

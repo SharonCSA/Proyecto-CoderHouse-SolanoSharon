@@ -74,6 +74,8 @@ main {
   font-family: "Roboto Slab", serif; }
   main .carrusel {
     margin: 20px; }
+    main .carrusel .flechas {
+      background-color: #ff8f45; }
   main .product-section {
     display: flex;
     max-width: 1400px;
@@ -143,20 +145,28 @@ main .productos {
     width: 100%; }
 
 main {
-  font-family: "Roboto Slab", serif; }
-  main .textos {
+  font-family: "Roboto Slab", serif;
+  overflow-x: hidden; }
+  main .fondo {
+    background-image: url(../img/qsomos/fondo3.jpg);
+    object-fit: cover;
+    margin: 20px;
     color: #5a3201;
-    padding: 20px; }
-  main .tarjetas {
-    border: 2px solid #ff8f45;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
-  main .tarjetas_color {
-    background-color: #ff8f45;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-    padding: 20px; }
-    main .tarjetas_color .frases {
-      color: white;
-      text-align: end; }
+    main .fondo h1 {
+      color: #ffdabc; }
+    main .fondo a {
+      color: #5a3201; }
+  main .clientes {
+    background-color: #fddeb8;
+    border-radius: 10%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
+    main .clientes .quote {
+      color: #ff8f45; }
+    main .clientes .foco {
+      width: 100%;
+      max-width: 300px;
+      object-fit: contain; }
 
 main .header_des {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
@@ -203,14 +213,18 @@ main .fondodemapa {
     background-color: #fddeb8;
     grid-area: direccion;
     text-align: center;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid #ff8f45;
+    border-radius: 5px; }
   main .fondodemapa .mapa {
     padding: 10px;
     height: auto;
     background-color: #fddeb8;
     grid-area: mapa;
     text-align: center;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid #ff8f45;
+    border-radius: 5px; }
   main .fondodemapa .contacto {
     color: #5a3201;
     padding: 20px;
@@ -218,7 +232,9 @@ main .fondodemapa {
     background-color: #fddeb8;
     grid-area: contacto;
     text-align: center;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid #ff8f45;
+    border-radius: 5px; }
     main .fondodemapa .contacto ul {
       list-style: none; }
       main .fondodemapa .contacto ul li a {
