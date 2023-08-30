@@ -5,7 +5,7 @@
   box-sizing: border-box; }
 
 body {
-  background: linear-gradient(to top, #e9a06f, white, #fcb687); }
+  background: linear-gradient(to top, #e7aa80, white, #fcbf96); }
 
 header .navegador {
   font-family: "Nanum Gothic", sans-serif; }
@@ -73,9 +73,10 @@ main {
 main {
   font-family: "Roboto Slab", serif; }
   main .carrusel {
+    border-radius: 2%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
+  main .margen {
     margin: 20px; }
-    main .carrusel .flechas {
-      background-color: #ff8f45; }
   main .product-section {
     display: flex;
     max-width: 1400px;
@@ -289,3 +290,29 @@ main .fondodemapa {
   cursor: pointer; }
   .boton:hover {
     background-color: #f67620; }
+
+.error {
+  font-family: "Roboto Slab", serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+  .error .error-container {
+    text-align: center; }
+    .error .error-container img {
+      max-width: 500px;
+      width: 100%; }
+    .error .error-container h1 {
+      font-size: 2rem;
+      margin: 10px 0; }
+    .error .error-container p {
+      font-size: 1.2rem;
+      color: #5a3201; }
+      .error .error-container p a {
+        color: #ff5100;
+        text-decoration: none; }
+        .error .error-container p a:hover {
+          text-decoration: underline; }

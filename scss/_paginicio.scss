@@ -1,10 +1,11 @@
 main{
     font-family: $font2;
     .carrusel{
+        border-radius: 2%;
+        box-shadow: $sombra;
+    }
+    .margen{
         margin: 20px;
-        .flechas{
-            background-color: $borde_card;
-        }
     }
 
     .product-section{
