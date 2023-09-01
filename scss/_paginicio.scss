@@ -8,20 +8,20 @@ main{
         margin: 20px;
     }
 
-    .product-section{
+    .productos-seccion{
         display: flex;
         max-width: 1400px;
         margin: 0;
         gap: 2rem;
         padding: 25px;
-        .product-content{
+        .productos-contenido{
             flex: 1;
             display: flex;
             flex-direction: row;
             align-items: center;
             text-align: center;
             justify-content: center;
-            padding: 10px;
+            padding: 20px;
             box-shadow: $sombra;
             background-color: $color_cajas;
             img{
@@ -34,8 +34,8 @@ main{
                     border: 3px solid  rgb(207, 161, 105);
                 }
             }
-            p{
-                margin: 20px;
+            h4{
+                margin: 10px;
                 width: 300px;
                 font-size: 18px;
             }

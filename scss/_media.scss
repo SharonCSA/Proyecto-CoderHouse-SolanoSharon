@@ -8,14 +8,14 @@
         }
     }
     /*index*/
-    .product-section{
+    .productos-seccion{
         flex-direction: column;
-        .product-content{
+        .productos-contenido{
             flex-direction: column;
             margin: 5px;
             border-radius: 2.5%;
-            p{
-                font-size: 10px;
+            h4{
+                font-size: 5px;
             }
         }
     }
