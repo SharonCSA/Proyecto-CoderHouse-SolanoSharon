@@ -10,17 +10,18 @@
     /*index*/
     .product-section{
         flex-direction: column;
-        padding: 10px;
         .product-content{
+            flex-direction: column;
             margin: 5px;
             border-radius: 2.5%;
+            p{
+                font-size: 10px;
+            }
         }
     }
     .atractivos{
         font-size: 18px;
     }
-    /*catalogo*/
-    
     /*ubicanos*/
     #fondodemapa{
         display: grid;
